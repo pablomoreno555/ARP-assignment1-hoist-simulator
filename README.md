@@ -47,11 +47,11 @@ The user can send velocity commands to the motors by clicking the buttons *vx-*,
 
 The current position of the hoist is represented in the **Inspection Console** window. In this window, the user can also activate the *STOP* and *RESET* signals by pressing the corresponding buttons.
 
-After pressing the *STOP* button, the velocities of both motors will be immediately set to zero, regardless of the user commands. Once the hoist has stopped, the user can continue to command it, by sending new velocity commands.
+After pressing the *STOP* button, the velocities of both motors will be immediately set to zero, regardless of the user commands. Once the hoist has stopped, the user can continue to command it.
 
-After pressing the *RESET* button, the velocities of both motors will be set to -0.5 until the hoist has reached its initial position. While the hoist is rewinding to its initial position, the velocity commands given by the user will be ignored, but once it has reached the origin, the user can continue to command it, by sending new velocity commands.
+After pressing the *RESET* button, the velocities of both motors will be set to -0.5 until the hoist has reached its initial position. While the hoist is rewinding to its initial position, the velocity commands given by the user will be ignored, but once it has reached the origin, the user can continue to command it.
 
-Finally, if all processes are inactive during 60 seconds (no motion of the hoist, no pressing of the buttons, etc), the program will end, terminating all processes and closing all windows.
+Finally, if all processes are inactive during 60 seconds (no motion of the hoist, no pressing of the buttons...), the program will end, terminating all processes and closing all windows.
 
 
 ## Required libraries/packages
