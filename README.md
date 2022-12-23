@@ -16,7 +16,7 @@ Two new windows will pop up: one corresponding to the **Command Console** and an
 
 
 ## Content of the Repository
-Appart from the *compile.sh* and *run.sh* files, the repository is organized in the following folders:
+Appart from the *compile.sh* and *run.sh* files, the repository is organized as follows:
 - The `src` folder contains the source code for the **Master**, **Command**, **Inspection**, **Motor1**, **Motor2**, and **World** processes.
 - The `bin` folder is where the executable files corresponding to the previous processes are generated after compilation.
 - The `include` folder contains all the data structures and methods used within the ncurses framework to build the two GUIs.
