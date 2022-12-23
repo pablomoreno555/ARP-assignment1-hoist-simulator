@@ -32,7 +32,7 @@ From the user side, there are two consoles (shell windows) that simulate a real 
 
 The program is made up of the following 6 processes:
 
-- **Master** process. It spawns all the other processes and defines all the unnamed pipes used for the IPC. It also implements the *watchdog*: it checks the activity of all the other processes, and in case none of them did anything for 60 seconds, it kills all the processes, including itself.
+- **Master** process. It spawns all the other processes and defines all the unnamed pipes used for the IPC. It also implements the *watchdog*: it checks the activity of all the other processes, and in case all of them did nothing for 60 seconds, it kills all the processes, including itself.
 - **Command Console** process. It reads the velocity commands given by the user through the buttons *vx-*, *vx stop*, *vx+*, *vz-*, *vz stop* and *vz+*, sending them to the appropiate motor. It is also capable of handling the *STOP* and *RESET* signals, ignoring all user inputs.
 - **Motor1** process. It simulates the motion along the X axis, receiving the velocity commands from the **Command Console** process, computing the estimated X position of the end effector, and sending it to the **World** process. It is also capable of handling the *STOP* signal (setting the velocity immediately to zero) and the *RESET* signal (rewinding the hoist to the zero position).
 - **Motor2** process. It simulates the motion along the Z axis, in the same way as the **Motor1** process, and handles the *STOP* and *RESET* signals in the same way.
