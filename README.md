@@ -1,15 +1,15 @@
 # ARP Hoist Assignment
-First *Advanced and Robot Programming (ARP)* assignment, by Pablo Moreno Moreno (5646698).
+First *Advanced and Robot Programming (ARP)* assignment, by Pablo Moreno Moreno (S5646698).
 
 ## Compiling and running the code
 In order to compile all the processes that make up the program, you just need to execute the following command:
 ```console
-	./compile.sh
+./compile.sh
 ```
 
 Then, you can run the program by executing:
 ```console
-	./run.sh
+./run.sh
 ```
 
 Two new windows will pop up: one corresponding to the **Command Console** and another corresponding to the **Inspection Console**.
